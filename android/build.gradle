@@ -1,6 +1,6 @@
 buildscript {
   // Buildscript is evaluated before everything else so we can't use getExtOrDefault
-  def kotlin_version = rootProject.ext.has('kotlinVersion') ? rootProject.ext.get('kotlinVersion') : project.properties['Detector_kotlinVersion']
+  def kotlin_version = "1.5.31"
 
   repositories {
     google()
@@ -119,7 +119,7 @@ repositories {
   }
 }
 
-def kotlin_version = getExtOrDefault('kotlinVersion')
+def kotlin_version = "1.5.31"
 
 dependencies {
   // noinspection GradleDynamicVersion
